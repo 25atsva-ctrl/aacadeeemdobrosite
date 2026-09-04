@@ -8,26 +8,23 @@
 </head>
 <body>
 <header class="hero">
-  <nav>
-    <div class="brand">Освітній навігатор</div>
-    <div class="navlinks">
-      <a href="#criteria">Критерії</a>
-      <a href="#pc">Робота з ПК</a>
-      <a href="#integrity">Доброчесність</a>
-      <a href="#quiz">Картки</a>
-    </div>
-  </nav>
+  <nav><div class="brand">Освітній навігатор</div></nav>
   <div class="hero-content">
     <div class="eyebrow">НАВЧАЙСЯ • ПРАЦЮЙ • ДОТРИМУЙСЯ</div>
     <h1>Три правила<br><span>якісної роботи</span></h1>
     <p>Короткий і зрозумілий довідник для учнів: як оцінюють роботу, як правильно працювати за ПК та що означає академічна доброчесність.</p>
-    <a class="button" href="#criteria">Почати</a>
+    <button class="button" data-tab="criteria">Перейти до розділів</button>
   </div>
   <div class="hero-shape"></div>
 </header>
-
+<div class="tabs-wrap"><div class="tabs" role="tablist">
+<button class="tab active" data-tab="criteria" role="tab">01&nbsp;&nbsp; Критерії оцінювання</button>
+<button class="tab" data-tab="pc" role="tab">02&nbsp;&nbsp; Робота з ПК</button>
+<button class="tab" data-tab="integrity" role="tab">03&nbsp;&nbsp; Академічна доброчесність</button>
+<button class="tab" data-tab="quiz" role="tab">04&nbsp;&nbsp; Картки-питання</button>
+</div></div>
 <main>
-<section id="criteria" class="section">
+<section id="criteria" class="tab-panel section">
   <div class="section-head">
     <div class="number">01</div>
     <div><p class="kicker">Розділ перший</p><h2>Критерії оцінювання</h2></div>
@@ -41,7 +38,7 @@
   <div class="tip"><strong>Порада:</strong> перед виконанням завдання перевір критерії оцінювання — вони допомагають зрозуміти очікуваний результат.</div>
 </section>
 
-<section id="pc" class="section tinted">
+<section id="pc" class="tab-panel section tinted">
   <div class="section-head">
     <div class="number">02</div>
     <div><p class="kicker">Розділ другий</p><h2>Вимоги до роботи з ПК</h2></div>
@@ -61,7 +58,7 @@
   </div>
 </section>
 
-<section id="integrity" class="section">
+<section id="integrity" class="tab-panel section">
   <div class="section-head">
     <div class="number">03</div>
     <div><p class="kicker">Розділ третій</p><h2>Академічна доброчесність</h2></div>
@@ -73,7 +70,7 @@
   </div>
 </section>
 
-<section id="quiz" class="section quiz-section">
+<section id="quiz" class="tab-panel section quiz-section">
   <div class="section-head">
     <div class="number">04</div>
     <div><p class="kicker">Перевір себе</p><h2>Картки з питаннями</h2></div>
